@@ -15,11 +15,37 @@
 
 //TODO write example
 
+//if(someVariable) {
+//    console.log("SomeVariable exists")
+//}
+
+
 
 // rather than having to check for both null and undefined like this:
 
 //TODO write example
 
+//if(someVariable !== null && someVariable !== undefined) {
+
+//}
+
+
+// example 1 
+
+//const test = ""; //falsy
+//const test = 0; // falsy
+//const test = false; // falsy
+//const test = undefined; // falsy
+//const test = null;  // falsy
+
+
+const test = "Michael";//truly
+
+if(test){
+    console.log("truly")
+} else {
+    console.log("falsy")
+}
 
 
 
@@ -36,3 +62,26 @@
 
 
 // Example 2 Real life example
+
+
+
+// some data from API
+
+const carsData = [
+    {
+        make: "Tesla",
+        isElectric: true
+    },
+
+    {
+        make: "BMW",
+        isElectric: false
+    }
+]
+
+carsData.forEach(function(car){
+    console.log(car);
+    if(car.isElectric){
+        console.log("car make is " + car.make + " and it is Electric");
+    }
+});
